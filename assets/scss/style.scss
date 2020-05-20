@@ -1,0 +1,44 @@
+/*
+    Theme Name: Landing Page - WP
+    Author: Rodrigo Viturino
+    Description: Criação Landing Page em WP - Teste Front-end - Martin Luz
+    Version: 1.0.0
+*/
+
+/* Boostrap 4 */
+// @import "./bootstrap/bootstrap-grid.scss";
+@import "./bootstrap/bootstrap.scss";
+@import "./bootstrap/bootstrap-reboot.scss";
+@import "base/reset";
+/* end Boostrap 4 */
+
+/* Website */
+
+// @import "fonts/font.css";
+@import "global";
+
+/* Pages */
+@import "page/home";
+// @import "page/sidebar-home";
+// @import "page/single-post";
+// @import "page/category";
+/**/
+
+/* end Website */
+@import "./variables"; // Custom variables.
+
+/* end Bootstrap 4 GRID */
+
+/* Font-Awesome*/
+@import "./font-awesome/scss/font-awesome.scss";
+// @import "fontawesome";
+// @import "solid";
+// @import "brands";
+/* end Font-Awesome*/
+
+/* Theme Martin Luz */
+
+@import "header";
+@import "footer";
+
+/* end Theme Martin Luz */

@@ -1,0 +1,45 @@
+// #f6f9fc;
+// #444;
+// #132e58;
+// #461f52;
+// #0285c9;
+// #041f8f;
+// #84888c
+
+.introducao {
+  margin-bottom: map-get($spacers, 4);
+  &__wrapper {
+    align-items: center;
+    &__block-title {
+      h1 {
+        font-weight: normal;
+        color: #041f8f;
+        margin-bottom: map-get($spacers, 3);
+        @include responsive-font-size(42px);
+      }
+      p {
+        color: #84888c;
+        line-height: 26px;
+        font-weight: normal;
+        @include responsive-font-size(16px);
+      }
+      .btn-blue {
+        display: inline-block;
+        background-color: #0285c9;
+        // border-radius: 5px;
+        padding: 13px 32px;
+        color: $white;
+        font-weight: $font-weight-bold;
+        text-transform: uppercase;
+        margin: map-get($spacers, 2) 0;
+        @include responsive-font-size(16px);
+      }
+
+      span {
+        display: block;
+        font-weight: $font-weight-normal;
+        color: #0285c9;
+      }
+    }
+  }
+}
