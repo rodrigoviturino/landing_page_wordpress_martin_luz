@@ -10319,25 +10319,25 @@ body {
 }
 
 /* Pages */
-.introducao {
+.introduction {
   margin-bottom: 1.5rem;
 }
-.introducao__wrapper {
+.introduction__wrapper {
   align-items: center;
 }
-.introducao__wrapper__block-title h1 {
+.introduction__wrapper__block-title h1 {
   font-weight: normal;
   color: #041f8f;
   margin-bottom: 1rem;
   font-size: 2.625rem;
 }
-.introducao__wrapper__block-title p {
+.introduction__wrapper__block-title p {
   color: #84888c;
   line-height: 26px;
   font-weight: normal;
   font-size: 1rem;
 }
-.introducao__wrapper__block-title .btn-blue {
+.introduction__wrapper__block-title .btn-blue {
   display: inline-block;
   background-color: #0285c9;
   padding: 13px 32px;
@@ -10347,7 +10347,7 @@ body {
   margin: 0.5rem 0;
   font-size: 1rem;
 }
-.introducao__wrapper__block-title span {
+.introduction__wrapper__block-title span {
   display: block;
   font-weight: 400;
   color: #0285c9;

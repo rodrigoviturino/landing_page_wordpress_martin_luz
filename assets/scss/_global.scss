@@ -2,3 +2,45 @@ body {
   font-family: "Roboto", sans-serif;
   height: 2000px;
 }
+
+.btn-blue {
+  display: inline-block;
+  background-color: #0285c9;
+  // border-radius: 5px;
+  padding: 13px 32px;
+  color: $white;
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+  margin: map-get($spacers, 2) 0;
+  transition: all 0.7s;
+  border: solid 1px transparent;
+  @include responsive-font-size(16px);
+
+  &:hover {
+    color: #0285c9;
+    background-color: transparent;
+    border: solid 1px #0285c9;
+    transition: all 0.7s;
+  }
+}
+
+.btn-blue-dark {
+  display: inline-block;
+  background-color: #041f8f;
+  // border-radius: 5px;
+  padding: 13px 32px;
+  color: $white;
+  border: solid 1px transparent;
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+  margin: map-get($spacers, 2) 0;
+  transition: all 0.7s;
+  @include responsive-font-size(16px);
+
+  &:hover {
+    background-color: transparent;
+    border: solid 1px #041f8f;
+    color: #041f8f;
+    transition: all 0.7s;
+  }
+}
