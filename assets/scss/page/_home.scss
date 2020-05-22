@@ -9,37 +9,60 @@
 // Section - Introduction
 .introduction {
   margin-bottom: map-get($spacers, 4);
+  @include media-breakpoint-only(xs) {
+    margin-bottom: 2rem;
+  }
+
   &__wrapper {
     align-items: center;
-    &__block-title {
-      h1 {
-        font-weight: normal;
-        color: #041f8f;
-        margin-bottom: map-get($spacers, 3);
-        @include responsive-font-size(42px);
-      }
-      p {
-        color: #84888c;
-        line-height: 26px;
-        font-weight: normal;
-        @include responsive-font-size(16px);
-      }
-      // .btn-blue {
-      //   display: inline-block;
-      //   background-color: #0285c9;
-      //   // border-radius: 5px;
-      //   padding: 13px 32px;
-      //   color: $white;
-      //   font-weight: $font-weight-bold;
-      //   text-transform: uppercase;
-      //   margin: map-get($spacers, 2) 0;
-      //   @include responsive-font-size(16px);
-      // }
 
-      span {
-        display: block;
-        font-weight: $font-weight-normal;
-        color: #0285c9;
+    &__columnLeft {
+      @include media-breakpoint-only(xs) {
+        order: 2;
+      }
+      &__block-title {
+        h1 {
+          font-weight: normal;
+          color: #041f8f;
+          margin-bottom: map-get($spacers, 3);
+          @include responsive-font-size(42px);
+          @include media-breakpoint-only(xs) {
+            margin-top: map-get($spacers, 3);
+            @include responsive-font-size(32px);
+          }
+        }
+        p {
+          color: #84888c;
+          line-height: 26px;
+          font-weight: normal;
+          @include responsive-font-size(16px);
+        }
+        // .btn-blue {
+        //   display: inline-block;
+        //   background-color: #0285c9;
+        //   // border-radius: 5px;
+        //   padding: 13px 32px;
+        //   color: $white;
+        //   font-weight: $font-weight-bold;
+        //   text-transform: uppercase;
+        //   margin: map-get($spacers, 2) 0;
+        //   @include responsive-font-size(16px);
+        // }
+
+        span {
+          display: block;
+          font-weight: $font-weight-normal;
+          color: #0285c9;
+          @include media-breakpoint-only(xs) {
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    &__columnRight {
+      @include media-breakpoint-only(xs) {
+        order: 1;
       }
     }
   }
@@ -48,13 +71,21 @@
 // Sessão - Control Spending - Modal
 .control-spending {
   margin-bottom: 136px;
+  @include media-breakpoint-only(xs) {
+    margin-bottom: map-get($spacers, 4);
+  }
 
   &__wrapper {
     align-items: center;
 
     &__columnLeft {
-      img {
-        border-radius: 10px;
+      @include media-breakpoint-only(xs) {
+        margin-bottom: map-get($spacers, 5);
+      }
+      .box-card {
+        img {
+          border-radius: 10px;
+        }
       }
     }
 
@@ -65,13 +96,59 @@
           padding-bottom: map-get($spacers, 3);
           width: 82%;
           @include responsive-font-size(32px);
+
+          @include media-breakpoint-only(xs) {
+            width: 100%;
+            padding-bottom: map-get($spacers, 4);
+            @include responsive-font-size(30px);
+          }
         }
         p {
           color: #84888c;
           line-height: 26px;
           @include responsive-font-size(16px);
         }
+        .test {
+          text-transform: uppercase;
+          color: #0285c9;
+          font-weight: $font-weight-bold;
+          @include responsive-font-size(18px);
+
+          &:after {
+            content: "\2192";
+            color: #0285c9;
+            display: inline-block;
+            @include responsive-font-size(35px);
+          }
+        }
       }
+    }
+  }
+}
+
+// Modal
+.box-modal {
+  z-index: 3;
+  display: none;
+  padding-top: 30px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+
+  &__wrapper {
+    &__header {
+      color: $white;
+      text-align: right;
+      cursor: pointer;
+      padding: 10px;
+      @include responsive-font-size(30px);
+    }
+    &__body {
     }
   }
 }
@@ -84,6 +161,13 @@
   margin: 0 60px 80px;
   position: relative;
 
+  @include media-breakpoint-only(xs) {
+    margin: 0;
+    border-radius: 0;
+    padding-top: map-get($spacers, 3);
+    padding-bottom: 23.45rem;
+  }
+
   &__wrapper {
     align-items: center;
 
@@ -94,13 +178,41 @@
         color: $white;
         h2 {
           line-height: 40px;
+          font-weight: $font-weight-normal;
           padding-right: map-get($spacers, 5);
           @include responsive-font-size(32px);
+
+          @include media-breakpoint-only(xs) {
+            padding: map-get($spacers, 0);
+            @include responsive-font-size(32px);
+          }
         }
         p {
           line-height: 26px;
           padding: map-get($spacers, 3) 0;
           @include responsive-font-size(16px);
+
+          @include media-breakpoint-only(xs) {
+            font-weight: $font-weight-normal;
+            padding-bottom: map-get($spacers, 0);
+          }
+        }
+
+        .btn-blue-dark {
+          @include media-breakpoint-only(xs) {
+            background-color: transparent;
+            padding: map-get($spacers, 0);
+            display: block;
+            text-align: left;
+            margin: map-get($spacers, 0);
+
+            &:after {
+              content: "\2192";
+              display: inline-block;
+              color: $white;
+              @include responsive-font-size(35px);
+            }
+          }
         }
       }
     }
@@ -110,6 +222,10 @@
         top: -369px;
         right: 0;
         bottom: 0;
+
+        @include media-breakpoint-only(xs) {
+          top: 0;
+        }
       }
     }
   }
@@ -121,14 +237,24 @@
   margin: 0 60px;
   border-radius: 15px;
   padding-bottom: map-get($spacers, 5);
+  @include media-breakpoint-only(xs) {
+    margin: map-get($spacers, 0);
+  }
 
   &-block-title {
     text-align: center;
     padding: 80px 0;
+    @include media-breakpoint-only(xs) {
+      padding: map-get($spacers, 5) 0 map-get($spacers, 3);
+    }
 
     h2 {
       color: #041f8f;
       @include responsive-font-size(32px);
+
+      @include media-breakpoint-only(xs) {
+        margin-bottom: map-get($spacers, 4);
+      }
     }
 
     p {
@@ -137,6 +263,11 @@
       margin: map-get($spacers, 3) auto;
       line-height: 28px;
       @include responsive-font-size(16px);
+
+      @include media-breakpoint-only(xs) {
+        margin: map-get($spacers, 0);
+        width: 100%;
+      }
     }
   }
 
@@ -183,9 +314,16 @@
 // Customers
 .customers {
   padding: 80px 0;
+  @include media-breakpoint-only(xs) {
+    padding: map-get($spacers, 4) 0 map-get($spacers, 5);
+  }
+
   &__wrapper {
     align-items: center;
     &__columnLeft {
+      @include media-breakpoint-only(xs) {
+        order: 2;
+      }
       .wrapper {
         align-items: center;
         align-self: center;
@@ -206,18 +344,33 @@
             display: flex;
             align-items: center;
             justify-content: center;
+
+            @include media-breakpoint-only(xs) {
+              height: 83px;
+              padding: map-get($spacers, 3);
+            }
           }
         }
       }
     }
     &__columnRight {
+      @include media-breakpoint-only(xs) {
+        order: 1;
+      }
       .block-title {
         padding: 0 map-get($spacers, 4);
+        @include media-breakpoint-only(xs) {
+          padding: map-get($spacers, 0);
+          margin-bottom: map-get($spacers, 4);
+        }
         h2 {
           color: #303d63;
           font-weight: $font-weight-normal;
           margin-bottom: map-get($spacers, 3);
           @include responsive-font-size(32px);
+          @include media-breakpoint-only(xs) {
+            padding: 0 map-get($spacers, 2) 0;
+          }
         }
 
         p {
@@ -225,6 +378,9 @@
           font-weight: $font-weight-normal;
           line-height: 26px;
           @include responsive-font-size(16px);
+          @include media-breakpoint-only(xs) {
+            padding: 0 map-get($spacers, 2) 0;
+          }
         }
       }
     }
@@ -234,9 +390,15 @@
 // Payment
 .payment {
   margin-bottom: 70px;
+  @include media-breakpoint-only(xs) {
+    margin-bottom: map-get($spacers, 5);
+  }
   &__block-title {
     text-align: center;
     margin-bottom: map-get($spacers, 5);
+    @include media-breakpoint-only(xs) {
+      margin-bottom: map-get($spacers, 3);
+    }
 
     h2 {
       color: #303d63;
@@ -251,6 +413,10 @@
       width: 73%;
       margin: 0 auto;
       @include responsive-font-size(16px);
+
+      @include media-breakpoint-only(xs) {
+        width: 100%;
+      }
     }
   }
 
@@ -258,6 +424,12 @@
     text-align: center;
     border: none;
     border-right: solid 1px #dbdbdb;
+
+    @include media-breakpoint-only(xs) {
+      border: none;
+      border-bottom: solid 1px #dbdbdb;
+      margin-bottom: map-get($spacers, 5);
+    }
 
     .img {
       display: inline-block;
@@ -270,6 +442,10 @@
       font-weight: 500;
       padding-bottom: map-get($spacers, 4);
       @include responsive-font-size(32px);
+      @include media-breakpoint-only(xs) {
+        font-weight: $font-weight-bold;
+        @include responsive-font-size(24px);
+      }
     }
     ul {
       li {
@@ -278,6 +454,10 @@
         font-weight: $font-weight-normal;
         line-height: 28px;
         @include responsive-font-size(18px);
+
+        @include media-breakpoint-only(xs) {
+          @include responsive-font-size(16px);
+        }
       }
     }
   }
@@ -296,6 +476,10 @@
       font-weight: $font-weight-bold;
       padding-bottom: map-get($spacers, 4);
       @include responsive-font-size(32px);
+
+      @include media-breakpoint-only(xs) {
+        @include responsive-font-size(24px);
+      }
     }
     ul {
       li {
@@ -304,6 +488,11 @@
         font-weight: $font-weight-bold;
         line-height: 28px;
         @include responsive-font-size(18px);
+
+        @include media-breakpoint-only(xs) {
+          line-height: 28px;
+          @include responsive-font-size(14px);
+        }
       }
     }
   }
@@ -319,6 +508,12 @@
   margin: 0 60px map-get($spacers, 5);
   border-radius: 15px;
 
+  @include media-breakpoint-only(xs) {
+    margin: map-get($spacers, 0);
+    border-radius: 0;
+    padding: map-get($spacers, 5) 0 map-get($spacers, 4);
+  }
+
   &__block-title {
     text-align: center;
 
@@ -327,17 +522,31 @@
       font-weight: $font-weight-bold;
       padding-bottom: map-get($spacers, 2);
       @include responsive-font-size(32px);
+
+      @include media-breakpoint-only(xs) {
+        line-height: 137%;
+        padding-bottom: map-get($spacers, 4);
+        @include responsive-font-size(30px);
+      }
     }
     p {
       color: $white;
       font-weight: $font-weight-normal;
       padding-bottom: map-get($spacers, 5);
       @include responsive-font-size(16px);
+
+      @include media-breakpoint-only(xs) {
+        line-height: 28px;
+        padding-bottom: map-get($spacers, 4);
+      }
     }
     .btn-blue {
       display: inline-block;
       margin: 0 auto map-get($spacers, 4);
       text-align: center;
+      @include media-breakpoint-only(xs) {
+        margin-bottom: map-get($spacers, 2);
+      }
     }
     span {
       color: $white;
@@ -352,16 +561,27 @@
 .blog {
   margin-bottom: map-get($spacers, 5);
 
+  @include media-breakpoint-only(xs) {
+    padding-top: map-get($spacers, 5);
+    margin-bottom: map-get($spacers, 4);
+  }
+
   &-title {
     line-height: 32px;
     color: #041f8f;
     padding-bottom: map-get($spacers, 5);
     font-weight: $font-weight-bold;
     @include responsive-font-size(32px);
+    @include media-breakpoint-only(xs) {
+      padding-bottom: map-get($spacers, 5);
+    }
   }
   &__wrapper {
     align-items: center;
     &__card {
+      @include media-breakpoint-only(xs) {
+        margin-bottom: map-get($spacers, 3);
+      }
       &__overlay {
         position: relative;
         bottom: 0;
@@ -392,11 +612,19 @@
       font-weight: $font-weight-normal;
       color: #303d63;
       @include responsive-font-size(32px);
+      @include media-breakpoint-only(xs) {
+        font-weight: $font-weight-bold;
+        margin-bottom: map-get($spacers, 4);
+        @include responsive-font-size(30px);
+      }
     }
 
     &__evaluation-list {
       display: flex;
       align-items: center;
+      @include media-breakpoint-only(xs) {
+        justify-content: center;
+      }
 
       ul {
         display: flex;

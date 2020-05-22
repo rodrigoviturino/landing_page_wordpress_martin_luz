@@ -14,11 +14,11 @@
     <section class="introduction">
       <div class="container">
         <div class="row introduction__wrapper">
-          <div class="col-md-6">
-            <div class="introduction__wrapper__block-title">
+          <div class="col-md-6 introduction__wrapper__columnLeft">
+            <div class="introduction__wrapper__columnLeft__block-title">
               <h1>
                 Reembolsos corporativos de forma simples e rápida.
-                <strong>Como deve ser.</strong>
+                <strong class="d-sm-none">Como deve ser.</strong>
               </h1>
               <p>
                 Acabe com a dor de cabeça da gestão de despesas do dia a dia da
@@ -30,7 +30,7 @@
               <span>Responderemos <strong>em até 24h</strong></span>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 introduction__wrapper__columnRight">
             <a href="#">
               <img src="assets/images/bg-header.png" alt="" />
             </a>
@@ -41,15 +41,445 @@
     <!-- end Introduction -->
 
     <!-- Control Spending - Modal -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-backdrop="static"
+      data-keyboard="false"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <iframe
+              id="video"
+              name="video"
+              width="100%"
+              height="600"
+              src="https://www.youtube.com/embed/qVPX0D1uZbc"
+              preload="auto"
+              controls="controls"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Understood</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end Box Modal -->
+
     <section class="control-spending">
-      <div class="contianer"></div>
+      <div class="container">
+        <div class="row control-spending__wrapper">
+          <div class="col-md-7 control-spending__wrapper__columnLeft">
+            <a
+              href="#"
+              id="modal-control-spending"
+              class="box-card"
+              data-target="#staticBackdrop"
+              data-toggle="modal"
+            >
+              <img src="assets/images/box-modal.png" alt="" />
+            </a>
+          </div>
+
+          <div class="col-md-5 control-spending__wrapper__columnRight">
+            <div class="block-title">
+              <h2>
+                Assuma agora o <strong>controle dos gastos</strong> variáveis da
+                sua empresa
+              </h2>
+              <p>
+                O BPP Corp é uma solução única para a administração de gastos
+                corporativos que conta com uma conta digital empresarial grátis,
+                cartões VISA pré-pagos para controle total das despesas e um
+                aplicativo sem custos adicionais para tornar seu controle
+                financeiro mais simples e prático!
+              </p>
+              <a href="#" class="test d-md-none d-lg-none d-sm-none"
+                >Peça já sua proposta</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- end Control Spending - Modal -->
+
+    <!-- CTA -  Organize Refunds-->
+    <section class="organize-refunds">
+      <div class="container">
+        <div class="row organize-refunds__wrapper">
+          <div class="col-md-4 offset-md-1 columnLeft">
+            <div class="block-title">
+              <h2>
+                <strong>Organizar reembolsos</strong> da sua empresa nunca foi
+                tão rápido
+              </h2>
+              <p>
+                Utilizando BPP Corp, você tem controle total sobre o budget de
+                sua equipe podendo realizar transferências instantâneas para os
+                cartões corporativos dos colaboradores, acompanhar gastos,
+                receber comprovantes e visualizar relatórios que organizam seu
+                reembolso.
+              </p>
+              <a href="#" class="btn btn-blue-dark">Peça já sua proposta</a>
+            </div>
+          </div>
+
+          <div class="col-md-7 columnRight">
+            <a href="#" class="img">
+              <img src="assets/images/bpp_corp_reembolso.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end CTA -  Organize Refunds-->
+
+    <!-- More Services -->
+    <section class="more-services">
+      <div class="container">
+        <div class="more-services-block-title">
+          <h2>
+            A plataforma que ajuda a <strong>reduzir os gastos</strong> do dia a
+            dia
+          </h2>
+          <p>
+            Simplifique a gestão das despesas, evitando a perda de tempo com
+            comprovantes e planilhas, reduzindo custos e aumentando os
+            resultados da sua empresa.
+          </p>
+        </div>
+
+        <div class="row more-services__wrapper">
+          <div class="col-md-4 more-services__wrapper__card">
+            <a href="#" class="img">
+              <img src="assets/images/icons/foguete.svg" alt="" />
+            </a>
+            <h3>Mais rapidez na gestão das suas despesas</h3>
+            <p>
+              Para que seu negócio cresça de maneira inteligente e rápida,
+              substitua os processos demorados de reembolsos, aprovações,
+              criação de relatórios e etc. por uma plataforma que te oferece
+              tudo isso de forma rápida e digital.
+            </p>
+          </div>
+
+          <div class="col-md-4 more-services__wrapper__card">
+            <a href="#" class="img">
+              <img src="assets/images/icons/icon02.svg" alt="" />
+            </a>
+            <h3>Os relatórios que você precisa em um único lugar</h3>
+            <p>
+              Encontre relatórios detalhados sobre as utilizações de cada cartão
+              corporativo cadastrado em sua equipe. Confira o saldo de cada
+              cartão, redistribua valores, faça transferências instantâneas e
+              não perca tempo com formulários e planilhas.
+            </p>
+          </div>
+
+          <div class="col-md-4 more-services__wrapper__card">
+            <a href="#" class="img">
+              <img src="assets/images/icons/icon03.svg" alt="" />
+            </a>
+            <h3>Organize todos os seus comprovantes</h3>
+            <p>
+              Recebendo os comprovantes de gastos de seus colaboradores através
+              da plataforma, você não precisa mais guardar comprovantes e notas
+              fiscais em lugar nenhum. Os gastos podem ser classificados por
+              tipo ou por projeto, da forma que você precisar.
+            </p>
+          </div>
+
+          <div class="col-md-4 more-services__wrapper__card">
+            <a href="#" class="img">
+              <img src="assets/images/icons/icon04.svg" alt="" />
+            </a>
+            <h3>Apresente suas despesas com um só clique</h3>
+            <p>
+              Enviar seus comprovantes é mais simples do que você imagina. Basta
+              que o colaborador tire uma foto do cupom fiscal com seu smartphone
+              através do aplicativo BPP Card. O gestor das despesas pode aprovar
+              ou reprovar aquele gasto através do App.
+            </p>
+          </div>
+
+          <div class="col-md-4 more-services__wrapper__card">
+            <a href="#" class="img">
+              <img src="assets/images/icons/icon05.svg" alt="" />
+            </a>
+            <h3>Controle seus gastos com cartões pré-pagos VISA</h3>
+            <p>
+              Os cartões pré-pago BPP Corp são fáceis de controlar: o
+              colaborador só gasta o que a empresa disponibiliza para compras
+              online ou em lojas físicas. Conte com cartões VISA aceitos em mais
+              de 30 milhões de estabelecimentos no mundo todo, incluindo sites e
+              aplicativos!
+            </p>
+          </div>
+
+          <div class="col-md-4 more-services__wrapper__card">
+            <a href="#" class="img">
+              <img src="assets/images/icons/icon06.svg" alt="" />
+            </a>
+            <h3>Conta digital gratuita e exclusiva para sua empresa</h3>
+            <p>
+              Oferecemos uma conta digital gratuita especialmente para gerenciar
+              despesas. Transfira o saldo de sua conta para os cartões de
+              maneira instantânea, sempre livre de taxas de manutenção ou de
+              juros.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end More Services -->
+
+    <!-- Customers  -->
+    <section class="customers">
+      <div class="container">
+        <div class="row customers__wrapper">
+          <div class="col-md-6 customers__wrapper__columnLeft">
+            <div class="row wrapper">
+              <div class="col-md-6 col-6 item">
+                <a href="#" class="item-img">
+                  <img src="assets/images/icons/logo01.svg" alt="" />
+                </a>
+              </div>
+
+              <div class="col-md-6 col-6 item">
+                <a href="#" class="item-img">
+                  <img src="assets/images/icons/logo02.svg" alt="" />
+                </a>
+              </div>
+
+              <div class="col-md-6 col-6 item">
+                <a href="#" class="item-img">
+                  <img src="assets/images/icons/logo03.svg" alt="" />
+                </a>
+              </div>
+
+              <div class="col-md-6 col-6 item">
+                <a href="#" class="item-img">
+                  <img src="assets/images/icons/logo04.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 offset-md-1 customers__wrapper__columnRight">
+            <div class="block-title">
+              <h2>
+                Conheça quem já conta com as
+                <strong>vantagens excluisivas</strong> do BPP Corp
+              </h2>
+              <p>
+                A empresas mais bem-sucedidas do mundo, grandes e pequenas,
+                confiam no BPP Corp para reduzir custos com organização dos
+                gastos da suas empresas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end Customers  -->
+
+    <!-- Payment -->
+    <section class="payment">
+      <div class="container">
+        <div class="payment__block-title">
+          <h2>Compare e decida agora mesmo</h2>
+          <p>
+            Substitua o uso do dinheiro em espécie pelo BPP Corp e ganhe
+            segurança e praticidade, evitando roubos e perdas, tendo uma
+            plataforma única para gerir suas despesas.
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 payment__columnLeft">
+            <a href="#" class="img">
+              <img src="assets/images/icons/icon-money.svg" alt="" />
+            </a>
+            <h3>Dinheiro em papel</h3>
+            <ul>
+              <li>Saque de dinheiro em papel para as despesas</li>
+              <li>Várias notas fiscais em papel</li>
+              <li>Diversas planilhas de gestão</li>
+              <li>Problemas de contabilização dos gastos</li>
+              <li>Não tem segurança</li>
+            </ul>
+          </div>
+
+          <div class="col-md-6 payment__columnRight">
+            <a href="#" class="img">
+              <img src="assets/images/icons/icon-logo-bpp.svg" alt="" />
+            </a>
+            <h3>BPP Corp</h3>
+            <ul>
+              <li>
+                Faça pagamentos com o BPP Corp sem precisar tirar dinheiro
+              </li>
+              <li>Prestação de contas sem papel, via app</li>
+              <li>Relatórios completos em um único lugar</li>
+              <li>Controle dos gastos com cartões pré-pago</li>
+              <li>Segurança total do seu dinheiro</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end Payment -->
+
+    <!-- Call to Action -->
+    <section class="cta">
+      <div class="container">
+        <div class="cta__block-title">
+          <h2>A sua gestão financeira nunca foi tão fácil.</h2>
+          <p>
+            Conte com as soluções do BPP Corp e facilite o controle dos gastos
+            da sua empresa agora mesmo.
+          </p>
+          <div>
+            <a href="#" class="btn btn-blue">Peça já sua proposta</a>
+          </div>
+          <span>Proposta <strong>grátis</strong> e sem compromisso.</span>
+        </div>
+      </div>
+    </section>
+    <!-- end Call to Action -->
+
+    <!-- Blog -->
+    <section class="blog">
+      <div class="container">
+        <h2 class="blog-title">Últimos posts</h2>
+        <div class="row blog__wrapper">
+          <div class="col-md-4 blog__wrapper__card">
+            <div class="blog__wrapper__card__overlay">
+              <a href="#">
+                <img src="assets/images/card-01.png" alt="" />
+              </a>
+              <div class="block-title">
+                <h3>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 blog__wrapper__card">
+            <div class="blog__wrapper__card__overlay">
+              <a href="#">
+                <img src="assets/images/card-01.png" alt="" />
+              </a>
+              <div class="block-title">
+                <h3>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 blog__wrapper__card">
+            <div class="blog__wrapper__card__overlay">
+              <a href="#">
+                <img src="assets/images/card-01.png" alt="" />
+              </a>
+              <div class="block-title">
+                <h3>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end Blog -->
+
+    <!-- Feedback -->
+    <section class="feedback">
+      <div class="container">
+        <div class="row feedback__wrapper">
+          <div class="col-md-4 offset-md-1">
+            <div class="title">Esta página foi útil?</div>
+          </div>
+
+          <div class="col-md-4 offset-md-3 feedback__wrapper__evaluation-list">
+            <ul>
+              <li>
+                <a href="#">
+                  <img
+                    src="assets/images/icons/icon-evaluation-01.svg"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="assets/images/icons/icon-evaluation-02.svg"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="assets/images/icons/icon-evaluation-03.svg"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="assets/images/icons/icon-evaluation-04.svg"
+                    alt=""
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end Feedback -->
 
     <footer></footer>
 
     <script src="assets/js/lib/jquery-3.5.1.min.js"></script>
     <script src="assets/js/lib/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
     <script src="assets/js/main.js"></script>
   </body>
 </html>

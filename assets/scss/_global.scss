@@ -22,6 +22,10 @@ body {
     border: solid 1px #0285c9;
     transition: all 0.7s;
   }
+
+  @include media-breakpoint-only(xs) {
+    display: block;
+  }
 }
 
 .btn-blue-dark {
@@ -43,4 +47,8 @@ body {
     color: #041f8f;
     transition: all 0.7s;
   }
+}
+
+.ativo {
+  display: block !important;
 }
