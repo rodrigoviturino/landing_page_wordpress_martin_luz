@@ -16,6 +16,17 @@ function ml_theme_styles(){
 
 function ml_after_setup(){
   add_theme_support("post-thumbnails");
+
+  
+}
+
+function title_limit($maximo) {
+  $title = get_the_title();
+  if(strlen($title) > $maximo ) {
+    $continua = '...';
+  }
+  $title = mb_substr($title, 0, $maximo, 'UTF-8');
+  echo $title.$continua;
 }
 
 

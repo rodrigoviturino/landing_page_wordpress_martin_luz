@@ -10912,14 +10912,15 @@ body {
   position: relative;
   bottom: 0;
 }
-.blog__wrapper__card__overlay .block-title {
+.blog__wrapper__card__overlay .block-title h2 {
   text-transform: uppercase;
+  padding: 0.25rem;
   position: absolute;
   bottom: 30px;
   left: 22px;
   color: #fff;
-  line-height: 16px;
-  font-weight: 700;
+  line-height: 20px;
+  font-weight: 400;
   font-size: 1rem;
 }
 

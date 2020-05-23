@@ -5,25 +5,19 @@
 
   <section class="introduction">
     <div class="container">
-      <div class="row introduction__wrapper">
-        <?php get_template_part( 'template_parts/home', 'introduction' ); ?>
-      </div>
+      <?php get_template_part( 'template_parts/home', 'introduction' ); ?>
     </div>
   </section>
 
   <section class="control-spending">
     <div class="container">
-      <div class="row control-spending__wrapper">
-        <?php get_template_part( 'template_parts/home', 'control-spending' ); ?>
-      </div>
+      <?php get_template_part( 'template_parts/home', 'control-spending' ); ?>
     </div>
   </section>
 
   <section class="organize-refunds">
     <div class="container">
-      <div class="row organize-refunds__wrapper">
         <?php get_template_part( 'template_parts/home', 'organize-refunds' ); ?>
-      </div>
     </div>
   </section>
 
@@ -40,17 +34,13 @@
           resultados da sua empresa.
         </p>
       </div>
-      <div class="row more-services__wrapper">
         <?php get_template_part( 'template_parts/home', 'more-services' ); ?>
-      </div>
     </div>
   </section>
 
   <section class="customers">
     <div class="container">
-      <div class="row customers__wrapper">
         <?php get_template_part( 'template_parts/home', 'customers' ); ?>
-      </div>
     </div>
   </section>
 
@@ -64,9 +54,7 @@
           plataforma única para gerir suas despesas.
         </p>
       </div>
-      <div class="row payment__wrapper">
         <?php get_template_part( 'template_parts/home', 'payment' ); ?>
-      </div>
     </div>
   </section>
 

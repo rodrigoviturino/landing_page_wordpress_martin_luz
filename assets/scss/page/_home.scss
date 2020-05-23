@@ -586,14 +586,17 @@
         position: relative;
         bottom: 0;
         .block-title {
-          text-transform: uppercase;
-          position: absolute;
-          bottom: 30px;
-          left: 22px;
-          color: $white;
-          line-height: 16px;
-          font-weight: $font-weight-bold;
-          @include responsive-font-size(16px);
+          h2 {
+            text-transform: uppercase;
+            padding: map-get($spacers, 1);
+            position: absolute;
+            bottom: 30px;
+            left: 22px;
+            color: $white;
+            line-height: 20px;
+            font-weight: $font-weight-normal;
+            @include responsive-font-size(16px);
+          }
         }
       }
     }
