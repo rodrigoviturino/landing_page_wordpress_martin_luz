@@ -1,5 +1,5 @@
 <div class="row organize-refunds__wrapper">
-          <div class="col-md-4 offset-md-1 columnLeft">
+          <div class="col-md-11 col-lg-5 col-xl-4 offset-md-1 columnLeft">
             <div class="block-title">
               <h2>
                 <strong>Organizar reembolsos</strong> da sua empresa nunca foi
@@ -16,7 +16,7 @@
             </div>
           </div>
 
-          <div class="col-md-7 columnRight">
+          <div class="col-md-12 col-lg-6 col-xl-7 columnRight">
             <a href="#" class="img">
               <img src="<?php echo get_template_directory_uri(); ?>'/assets/images/bpp_corp_reembolso.png'" alt="" />
             </a>

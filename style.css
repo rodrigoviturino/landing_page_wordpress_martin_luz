@@ -10523,6 +10523,31 @@ body {
     padding-bottom: 23.45rem;
   }
 }
+@media (min-width: 375px) and (max-width: 380px) {
+  .organize-refunds {
+    padding-bottom: 27.5rem;
+  }
+}
+@media (min-width: 425px) and (max-width: 430px) {
+  .organize-refunds {
+    padding-bottom: 31.2rem;
+  }
+}
+@media (min-width: 568px) and (max-width: 580px) {
+  .organize-refunds {
+    padding-bottom: 40.1rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .organize-refunds {
+    padding-bottom: 40.1rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .organize-refunds {
+    padding-bottom: 0.5rem;
+  }
+}
 .organize-refunds__wrapper {
   align-items: center;
 }
@@ -10576,6 +10601,16 @@ body {
 @media (max-width: 575.98px) {
   .organize-refunds__wrapper .columnRight .img {
     top: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .organize-refunds__wrapper .columnRight .img {
+    top: 0;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .organize-refunds__wrapper .columnRight .img {
+    top: -315px;
   }
 }
 
