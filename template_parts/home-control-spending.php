@@ -1,18 +1,32 @@
     <!-- Modal -->
     <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-transparent border-0">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
+              <span aria-hidden="true" class="d-block bg-light p-2 rounded-pill border border-danger">&times;</span>
             </button>
           </div>
-          <div class="modal-body">
+          <div class="modal-body d-none d-sm-block d-md-block d-lg-block p-0">
             <iframe
               id="video"
               name="video"
               width="100%"
               height="600"
+              src="https://www.youtube.com/embed/qVPX0D1uZbc"
+              preload="auto"
+              controls="controls"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="modal-body d-sm-none d-md-none d-lg-none p-0">
+            <iframe
+              id="video"
+              name="video"
+              width="100%"
+              height="320"
               src="https://www.youtube.com/embed/qVPX0D1uZbc"
               preload="auto"
               controls="controls"
