@@ -52,3 +52,13 @@ body {
 .ativo {
   display: block !important;
 }
+
+[data-target="#carouselExampleIndicators"] {
+  height: 8px !important;
+  width: 8px !important;
+  border-radius: 100px !important;
+  background-clip: unset !important;
+  border-top: unset !important;
+  border-bottom: unset !important;
+  background-color: #041f8f !important;
+}

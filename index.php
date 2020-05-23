@@ -47,7 +47,7 @@
   <section class="payment">
     <div class="container">
       <div class="payment__block-title">
-        <h2>Compare e decida agora mesmo</h2>
+        <h2>Compare e <span class="font-weight">decida agora</span> mesmo</h2>
         <p>
           Substitua o uso do dinheiro em espécie pelo BPP Corp e ganhe
           segurança e praticidade, evitando roubos e perdas, tendo uma

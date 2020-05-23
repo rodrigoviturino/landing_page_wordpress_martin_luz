@@ -42,3 +42,15 @@
 @import "footer";
 
 /* end Theme Martin Luz */
+
+#carouselExampleInterval {
+  display: none;
+}
+@media (max-width: 575.98px) {
+  #carouselExampleInterval {
+    display: block;
+  }
+  #more-services-desktop {
+    display: none;
+  }
+}

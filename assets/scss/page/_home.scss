@@ -26,9 +26,20 @@
           color: #041f8f;
           margin-bottom: map-get($spacers, 3);
           @include responsive-font-size(42px);
+
           @include media-breakpoint-only(xs) {
             margin-top: map-get($spacers, 3);
+            font-weight: $font-weight-bold;
             @include responsive-font-size(32px);
+          }
+
+          .font-weight {
+            font-weight: $font-weight-bold;
+            color: #041f8f;
+            @include media-breakpoint-only(xs) {
+              display: inline;
+              font-weight: $font-weight-normal;
+            }
           }
         }
         p {
@@ -147,8 +158,6 @@
       cursor: pointer;
       padding: 10px;
       @include responsive-font-size(30px);
-    }
-    &__body {
     }
   }
 }
@@ -287,6 +296,10 @@
         margin-bottom: map-get($spacers, 5);
       }
 
+      @include media-breakpoint-only(xs) {
+        margin-bottom: map-get($spacers, 5);
+      }
+
       .img {
         display: inline-block;
         margin-bottom: map-get($spacers, 4);
@@ -299,6 +312,10 @@
         margin: 0 auto map-get($spacers, 3);
         font-weight: $font-weight-bold;
         @include responsive-font-size(24px);
+        @include media-breakpoint-only(xs) {
+          font-weight: $font-weight-normal;
+          width: 100%;
+        }
       }
 
       p {
@@ -405,6 +422,11 @@
       margin-bottom: map-get($spacers, 3);
       font-weight: $font-weight-normal;
       @include responsive-font-size(32px);
+
+      .font-weight {
+        color: #303d63;
+        font-weight: $font-weight-bold;
+      }
     }
     p {
       font-weight: $font-weight-normal;
@@ -525,6 +547,7 @@
 
       @include media-breakpoint-only(xs) {
         line-height: 137%;
+        font-weight: $font-weight-normal;
         padding-bottom: map-get($spacers, 4);
         @include responsive-font-size(30px);
       }
@@ -644,5 +667,3 @@
 }
 
 // Modal
-.modal {
-}

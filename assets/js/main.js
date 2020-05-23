@@ -24,3 +24,18 @@
 // $("#modal-close").on("hidden.bs.modal", function (e) {
 //   $("#video iframe").attr("src", $("#video iframe").attr("src"));
 // });
+
+// const small = window.matchMedia(" (max-width: 575.98px)");
+
+$(".carousel").carousel({
+  interval: 2000,
+});
+// $(".carousel-indicators").css("display: none");
+
+// $(document).ready(function () {
+//   $("#carouselExampleInterval").carousel();
+//   if ($(window).width() < 640) {
+//     $(".col-sm-6").unwrap().addClass("item");
+//     $(".col-sm-6:first").addClass("active");
+//   }
+// });

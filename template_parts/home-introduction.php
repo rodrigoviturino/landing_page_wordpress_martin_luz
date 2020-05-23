@@ -3,7 +3,7 @@
             <div class="introduction__wrapper__columnLeft__block-title">
               <h1>
                 Reembolsos corporativos de forma simples e rápida.
-                <strong class="d-sm-none">Como deve ser.</strong>
+                <span class="font-weight">Como deve ser.</span>
               </h1>
               <p>
                 Acabe com a dor de cabeça da gestão de despesas do dia a dia da
