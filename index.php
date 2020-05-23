@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 
+
 <main class="home">
 
   <section class="introduction">
@@ -87,9 +88,7 @@
 
   <section class="feedback">
     <div class="container">
-      <div class="row feedback__wrapper">
-        <?php get_template_part( 'template_parts/home', 'feedback' ); ?>
-      </div>
+      <?php get_template_part( 'template_parts/home', 'feedback' ); ?>
     </div>
   </section>
 

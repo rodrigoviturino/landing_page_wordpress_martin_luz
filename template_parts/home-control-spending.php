@@ -1,5 +1,33 @@
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <iframe
+              id="video"
+              name="video"
+              width="100%"
+              height="600"
+              src="https://www.youtube.com/embed/qVPX0D1uZbc"
+              preload="auto"
+              controls="controls"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end Box Modal -->
+
 <div class="row control-spending__wrapper">
-  
+
   <div class="col-md-7 control-spending__wrapper__columnLeft">
     <a href="#" id="modal-control-spending" class="box-card" data-target="#staticBackdrop" data-toggle="modal">
       <img src="<?php echo get_template_directory_uri(); ?>'/assets/images/box-modal.png'" alt="" />

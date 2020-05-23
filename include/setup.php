@@ -13,3 +13,10 @@ function ml_theme_styles(){
   wp_enqueue_script('ml_main_js', $directory . '/assets/js/main.js');
 
 } 
+
+function ml_after_setup(){
+  add_theme_support("post-thumbnails");
+}
+
+
+  
