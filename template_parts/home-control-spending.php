@@ -13,7 +13,7 @@
               name="video"
               width="100%"
               height="600"
-              src="https://www.youtube.com/embed/qVPX0D1uZbc"
+              src="https://www.youtube.com/watch?v=lpfRmbr4_Sk"
               preload="auto"
               controls="controls"
               frameborder="0"
