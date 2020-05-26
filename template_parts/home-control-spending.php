@@ -3,13 +3,13 @@
       <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content bg-transparent border-0">
           <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <button type="button" class="close" id="modal-btn-close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true" class="d-block bg-light p-2 rounded-pill border border-danger">&times;</span>
             </button>
           </div>
           <div class="modal-body d-none d-sm-block d-md-block d-lg-block p-0">
             <iframe
-              id="video"
+              id="video1"
               name="video"
               width="100%"
               height="600"
